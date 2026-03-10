@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left-Hand Dominant Typing Practice</title>
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container glass-panel">
+        <header>
+            <h1>Left-Hand Typing</h1>
+            <p>Master the left side of your keyboard</p>
+        </header>
+
+        <div class="stats-container">
+            <div class="stat-box">
+                <span class="stat-label">Time</span>
+                <span class="stat-value" id="time-left">60</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">WPM</span>
+                <span class="stat-value" id="wpm">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Accuracy</span>
+                <span class="stat-value" id="accuracy">100%</span>
+            </div>
+        </div>
+
+        <div class="typing-area">
+            <div class="word-display-wrapper">
+                <div class="word-display" id="word-display">
+                    <!-- Words will be injected here via JS -->
+                </div>
+            </div>
+            <input type="text" id="type-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+            <div class="progress-bar-container">
+                 <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="keyboard">
+            <!-- First Row (Numbers/Symbols - omitted for simplicity, focusing on letters) -->
+            <!-- Second Row -->
+            <div class="key-row">
+                <!-- Using data-key for easier JS targeting -->
+                <div class="key left-hand" data-key="q">Q</div>
+                <div class="key left-hand" data-key="w">W</div>
+                <div class="key left-hand" data-key="e">E</div>
+                <div class="key left-hand" data-key="r">R</div>
+                <div class="key left-hand" data-key="t">T</div>
+                <div class="key right-hand" data-key="y">Y</div>
+                <div class="key right-hand" data-key="u">U</div>
+                <div class="key right-hand" data-key="i">I</div>
+                <div class="key right-hand" data-key="o">O</div>
+                <div class="key right-hand" data-key="p">P</div>
+            </div>
+            <!-- Third Row -->
+            <div class="key-row">
+                <div class="key left-hand" data-key="a">A</div>
+                <div class="key left-hand" data-key="s">S</div>
+                <div class="key left-hand" data-key="d">D</div>
+                <div class="key left-hand" data-key="f">F</div>
+                <div class="key left-hand" data-key="g">G</div>
+                <div class="key right-hand" data-key="h">H</div>
+                <div class="key right-hand" data-key="j">J</div>
+                <div class="key right-hand" data-key="k">K</div>
+                <div class="key right-hand" data-key="l">L</div>
+            </div>
+            <!-- Fourth Row -->
+            <div class="key-row">
+                <div class="key left-hand" data-key="z">Z</div>
+                <div class="key left-hand" data-key="x">X</div>
+                <div class="key left-hand" data-key="c">C</div>
+                <div class="key left-hand" data-key="v">V</div>
+                <div class="key left-hand" data-key="b">B</div>
+                <div class="key right-hand" data-key="n">N</div>
+                <div class="key right-hand" data-key="m">M</div>
+            </div>
+            <div class="key-row">
+                 <div class="key spacebar" data-key=" ">Space</div>
+            </div>
+        </div>
+        
+        <button id="restart-btn" class="glass-btn">Restart Test</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
